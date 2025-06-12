@@ -17,7 +17,7 @@ int main(int argc, char const *argv[])
 {
 	{
 		// 可以尝试把false 变为true 此时调度器所在线程也将加入工作线程
-		std::shared_ptr<Scheduler> scheduler = std::make_shared<Scheduler>(1, false, "scheduler_1");
+		std::shared_ptr<Scheduler> scheduler = std::make_shared<Scheduler>(3, false, "scheduler_1");
 		
 		scheduler->start();
 
